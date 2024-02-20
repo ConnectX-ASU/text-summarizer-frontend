@@ -7,8 +7,8 @@ export default function Login() {
   return (
     <>
       <form>
-        <div className="w-100 min-vh-100 d-flex justify-content-center">
-          <div id="login-div" className={`${style.login_card} `}>
+        <div className="w-100 min-vh-100 d-flex justify-content-center bg-dark">
+          <div id="login-div" className={`${style.login_card} bg-white `}>
             <div className={`${style.loginheader}`}>
               <h2>Login</h2>
             </div>
@@ -34,7 +34,7 @@ export default function Login() {
               </div>
 
               <button type="submit" className="form-btn">
-                SIGN IN
+                LOGIN
               </button>
               <div className="login-footer d-block m-5">
                 <div className="text-center">

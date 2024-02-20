@@ -37,6 +37,7 @@ section:has(.container) {
 
 .registerCard {
 
+  z-index: 999;
   margin: 5px 0;
   border-radius: 30px;
   display: block;

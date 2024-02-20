@@ -38,6 +38,7 @@ section:has(.container) {
 }
 
 .login_card {
+  z-index: 999;
   margin: 20px 0;
   border-radius: 30px;
   display: block;

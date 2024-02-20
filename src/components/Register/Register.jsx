@@ -6,8 +6,8 @@ export default function Register() {
   return (
     <>
       <form>
-        <div className="w-100 min-vh-100 d-flex justify-content-center">
-          <div id="register-div" className={`${style.registerCard} `}>
+        <div className="w-100 min-vh-100 d-flex justify-content-center bg-dark">
+          <div id="register-div" className={`${style.registerCard} bg-white  `}>
             <div className={`${style.registerHeader}`}>
               <h2>Sign Up</h2>
             </div>
