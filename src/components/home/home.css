@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #3D80FE;
+    --second-color: #1f345b;
+}
+
+header{
+    border: 2px solid black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: var(--second-color);
+    color: white;
+    text-align: center;
+}
+
+
+.summary-box{
+    position: relative;
+    width: 80%;
+    height: 500px;
+    background-color: white;
+    margin: 100px auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45px auto;
+    box-shadow: 0px 2px 5px 1px var(--second-color);
+}
+
+.options{
+    font-size: 1.3rem;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    grid-row: 1;
+    grid-column: span 2;
+    border-bottom: 3px solid var(--main-color);
+}
+
+.area{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.input {
+    border-right: 3px solid var(--main-color);
+}
+
+.range {
+    -webkit-appearance: none; 
+    appearance: none; 
+    width: 150px;
+    height: 3px;
+    background-color:var(--second-color); 
+    border-radius: 10px; 
+    outline: none;
+    margin-left: 40px; 
+}
+
+.reange::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none; 
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color); 
+    border-radius: 50%; 
+    cursor: pointer; 
+}
+
+.bottom{
+    position: absolute;
+    bottom: 10px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 47%;
+}
+
+.icon{
+    padding: 10px;
+    color: var(--second-color);
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: color 0.5s ease;
+}
+
+.icon:hover{
+    color: var(--main-color) ;
+}
+
+.summarize-btn{
+    padding: 5px 15px;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 50px;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.summarize-btn:hover{
+    background-color: var(--second-color);
+}
+
+.trash{
+    position: absolute;
+    right: 20px;
+}
+
+.user{
+    color: #3D80FE;
+    transition: none;
+}
