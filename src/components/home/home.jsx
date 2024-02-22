@@ -21,7 +21,7 @@ export default function Home() {
           onClick={() => navigation("/Login")}
         />
       </div>
-    //////////!logo and name
+    {/* //////////!logo and name */}
       {/* <div className=" bg-dark">
         <h1 className="title mx-1 text-light">Connect X </h1>
 
