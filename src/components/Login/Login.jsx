@@ -8,7 +8,10 @@ export default function Login() {
     <>
       <form>
         <div className="w-100 min-vh-100 d-flex justify-content-center bg-dark">
-          <div id="login-div" className={`${style.login_card} bg-white `}>
+          <div
+            id="login-div"
+            className={`${style.login_card} bg-white h-75 m-auto p-2 pt-4 `}
+          >
             <div className={`${style.loginheader}`}>
               <h2>Login</h2>
             </div>

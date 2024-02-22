@@ -7,8 +7,11 @@ export default function Register() {
     <>
       <form>
         <div className="w-100 min-vh-100 d-flex justify-content-center bg-dark">
-          <div id="register-div" className={`${style.registerCard} bg-white  `}>
-            <div className={`${style.registerHeader}`}>
+          <div
+            id="register-div"
+            className={`${style.registerCard} bg-white h-75 text-center m-auto `}
+          >
+            <div className={`${style.registerHeader} p-2 pt-4`}>
               <h2>Sign Up</h2>
             </div>
             <div className="register-body">

@@ -46,6 +46,10 @@ textarea.form-control:focus {
   box-shadow: none;
 }
 
+/* 
+textarea {
+  background-color: #1b1928 !important;
+} */
 
 
 .inputArea {
