@@ -1,7 +1,7 @@
 html {
     height: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 #stars {
@@ -81,7 +81,7 @@ html {
 
 @keyframes animStar {
     from {
-        transform: translateY(0px);
+        transform: translateY(-800px);
     }
 
     to {

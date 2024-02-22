@@ -3,6 +3,11 @@
   margin: 0;
 }
 
+body {
+  /* overflow: scroll; */
+  height: auto;
+}
+
 :root {
   --main-color: #3D80FE;
   --second-color: #1f345b;
@@ -30,6 +35,18 @@
   font-weight: bold;
   transition: all 0.5s;
 }
+
+
+.borders {
+  resize: none;
+}
+
+textarea.form-control:focus {
+  border-color: #3D80FE;
+  box-shadow: none;
+}
+
+
 
 .inputArea {
   background-color: #ffffff;
