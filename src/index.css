@@ -108,7 +108,14 @@ input {
 
 
 
-
+input:valid+.span-box,
+input:focus+.span-box {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 12px;
+  z-index: 1111;
+  transform: translate(-17px, -20px) scale(.88);
+}
 
 
 .form-btn {
