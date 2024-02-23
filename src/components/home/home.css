@@ -28,11 +28,12 @@
     align-items: center;
 }
 
+
 .summary-box {
     position: relative;
 
 
-    background-color: white !important;
+    background-color: #131416 !important;
 
 
     margin: auto;
@@ -73,6 +74,10 @@
     margin-left: 40px;
 }
 
+textarea {
+    color: white !important;
+}
+
 .reange::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
@@ -91,11 +96,13 @@
     justify-content: space-between;
     align-items: center;
     width: 47%;
+    
 } */
 
 .icon {
     padding: 10px;
-    color: var(--second-color);
+    /* color: var(--second-color); */
+    color: #555eab !important;
     font-size: 1.8rem;
     cursor: pointer;
     border-radius: 50%;
@@ -107,7 +114,7 @@
 }
 
 .icon:hover {
-    color: var(--main-color);
+    color: #3D80FE !important;
 }
 
 

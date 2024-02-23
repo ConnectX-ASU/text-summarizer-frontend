@@ -9,7 +9,7 @@ export default function Register() {
         <div className="w-100 min-vh-100 d-flex justify-content-center bg-dark">
           <div
             id="register-div"
-            className={`${style.registerCard} bg-white h-75 text-center m-auto `}
+            className={`${style.registerCard} h-75 text-center m-auto `}
           >
             <div className={`${style.registerHeader} p-2 pt-4`}>
               <h2>Sign Up</h2>
@@ -42,7 +42,7 @@ export default function Register() {
                   type="password"
                   className="inputArea"
                 />
-                <span className="span-box">password</span>
+                <span className="span-box text-center">Password</span>
               </div>
 
               <div className="inputBox d-flex justify-content-center">
@@ -60,7 +60,7 @@ export default function Register() {
               </button>
               <div className="register-footer d-block m-5">
                 <div className="text-center">
-                  <h4 className="fs-6">Already have an account ?</h4>
+                  <h4 className="fs-6 text-white">Already have an account ?</h4>
                   <h6
                     className="m-color cursor"
                     onClick={() => navigation("/Login")}

@@ -42,18 +42,31 @@ body {
 }
 
 textarea.form-control:focus {
-  border-color: #3D80FE;
   box-shadow: none;
+  border-color: #3D80FE !important;
 }
 
-/* 
-textarea {
-  background-color: #1b1928 !important;
-} */
 
+.output textarea {
+  border-color: #0f3986 !important;
+  background-color: #110d1e !important;
+}
+
+textarea {
+  border-color: #0f3986 !important;
+  background-color: #1b1928 !important;
+}
+
+::placeholder {
+  color: #ffffff !important;
+}
+
+textarea input {
+  color: #ffffff !important;
+}
 
 .inputArea {
-  background-color: #ffffff;
+  background-color: black;
   border: 1px solid #d1cfcf !important;
   display: block;
   margin: 20px auto;
@@ -61,24 +74,42 @@ textarea {
   position: relative;
   border-radius: 100px;
   width: 350px;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   transition-property: width;
+  background-color: black;
+  border: none !important;
 }
+
+.span-box {
+  color: #ffffff !important;
+}
+
+input {
+  color: #ffffff !important;
+}
+
+
 
 
 .inputArea:focus {
   outline: none;
   width: 80%;
-  border: 1px solid #d1cfcf !important;
+  /* border: 1px solid #d1cfcf !important; */
   padding: 15px 40px;
-  background-color: #ffffff;
 }
 
 .inputBox .inputArea:focus~.span-box {
   font-weight: 500;
   transform: translateY(-30px);
-  background-color: #ffffff;
+  /* background-color: white; */
+  /* color: #3D80FE; */
+  color: white;
 }
+
+
+
+
+
 
 .form-btn {
   display: block;

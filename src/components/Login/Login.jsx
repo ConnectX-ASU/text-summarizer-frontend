@@ -10,9 +10,9 @@ export default function Login() {
         <div className="w-100 min-vh-100 d-flex justify-content-center bg-dark">
           <div
             id="login-div"
-            className={`${style.login_card} bg-white h-75 m-auto p-2 pt-4 `}
+            className={`${style.login_card}  h-75 m-auto p-2 pt-4 `}
           >
-            <div className={`${style.loginheader}`}>
+            <div className={`${style.loginheader} text-white`}>
               <h2>Login</h2>
             </div>
             <div className="login-body">
@@ -33,7 +33,7 @@ export default function Login() {
                   type="password"
                   className="inputArea"
                 />
-                <span className="span-box">password</span>
+                <span className="span-box text-center">Password</span>
               </div>
 
               <button type="submit" className="form-btn">
@@ -41,7 +41,7 @@ export default function Login() {
               </button>
               <div className="login-footer d-block m-5">
                 <div className="text-center">
-                  <h4 className="fs-6">Don't have an account ?</h4>
+                  <h4 className="fs-6 text-white">Don't have an account ?</h4>
                   <h6
                     className="m-color cursor"
                     onClick={() => navigation("/Register")}
