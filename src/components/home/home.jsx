@@ -2,16 +2,7 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-<<<<<<< HEAD
 import { faUpload, faDownload, faCopy, faTrashCan} from '@fortawesome/free-solid-svg-icons';
-=======
-import { faUpload } from "@fortawesome/free-solid-svg-icons";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { faCopy } from "@fortawesome/free-solid-svg-icons";
-import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import img from "./download.png";
->>>>>>> 24f821f691a8fdf1b899d0323f28838d5e1ce405
 
 export default function Home() {
   const navigation = useNavigate();
@@ -40,20 +31,16 @@ export default function Home() {
 
       <div className="home bg-dark w-100 min-vh-100 text-white">
         <div className="summary-box col-md-10">
-          {/* <div className="header bg-dark text-center">
-            <h2 className="mx-1 mb-3 text-light">
-              <img src={img} width="100" height="200" alt="Logo" />
-              Text Summarizer
-            </h2>
+          {/* <div className=" bg-dark text-center ">
+            <h2 className=" mx-1 text-light">Connect X Text Summarizer </h2>
           </div> */}
-
           <div className="options col-md-12 mt-2">
             <span>summary length</span>
-            <input type="range" className="range" />
+            <input type="range" className="range"></input>
             <FontAwesomeIcon className="icon trash" icon={faTrashCan} />
           </div>
 
-          <div className="summary-area row">
+          <div className="summary-area">
             <div className="col-md-6">
               <div className="area">
                 <textarea
@@ -77,14 +64,9 @@ export default function Home() {
                   disabled
                   rows="13"
                   cols="40"
-<<<<<<< HEAD
                   className="w-100 p-2 form-control borders "
                   placeholder="summary will appear here:)"
                   style={{resize: "none"}}
-=======
-                  className="w-100 p-2 form-control borders"
-                  placeholder="Summary will appear here :)"
->>>>>>> 24f821f691a8fdf1b899d0323f28838d5e1ce405
                 ></textarea>
                 <div className="bottom-icons">
                 <FontAwesomeIcon className="icon" icon={faDownload} />
