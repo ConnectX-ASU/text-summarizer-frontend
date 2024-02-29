@@ -2,25 +2,31 @@ import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUpload } from "@fortawesome/free-solid-svg-icons";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import { faCopy } from "@fortawesome/free-solid-svg-icons";
-import { faTrashCan } from "@fortawesome/free-solid-svg-icons";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faUpload, faDownload, faCopy, faTrashCan} from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   const navigation = useNavigate();
   return (
     <>
       <div className="header bg-dark">
-        <span className="title mx-2">UserName</span>
+        <div className="inner-header col-md-10 d-flex justify-content-between mx-auto">
+            <span className="title mx-2">ConnectX AI Summarizer</span>
+            <div className="header-links d-flex justify-content-between w-25">
+                <span>user history</span>
+                <span
+                onClick={() => navigation("/Login")}
+                >login/user name</span>
+            </div>
+        </div>
+        {/* <span className="title mx-2">ConnectX AI Summarizer</span>
         <FontAwesomeIcon
           className="mr-auto icon user"
           icon={faUser}
           style={{ color: "white" }}
           onClick={() => navigation("/Login")}
-        />
+        /> */}
       </div>
+     
       {/* //////////!logo and name */}
 
       <div className="home bg-dark w-100 min-vh-100 text-white">
@@ -44,7 +50,10 @@ export default function Home() {
                   className="w-100 p-2 form-control borders input"
                   placeholder="Enter your text"
                 ></textarea>
+              <div className="bottom-icons d-flex justify-content-between align-items-center col-md-12 mb-3">
                 <FontAwesomeIcon className="icon" icon={faUpload} />
+                <button className="btn btn-outline-primary">Summarize</button>
+              </div>
               </div>
             </div>
 
@@ -57,15 +66,14 @@ export default function Home() {
                   cols="40"
                   className="w-100 p-2 form-control borders "
                   placeholder="summary will appear here:)"
+                  style={{resize: "none"}}
                 ></textarea>
+                <div className="bottom-icons">
                 <FontAwesomeIcon className="icon" icon={faDownload} />
                 <FontAwesomeIcon className="icon" icon={faCopy} />
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="d-flex justify-content-center align-items-center col-md-12 mb-3">
-            <button className="btn btn-outline-primary">Summarize</button>
           </div>
         </div>
       </div>
