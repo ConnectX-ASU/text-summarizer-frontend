@@ -45,3 +45,8 @@ section:has(.container) {
   width: 500px;
   background-color: #1a1b1d !important;
 }
+
+
+input {
+  color: rgb(215, 223, 230) !important;
+}
