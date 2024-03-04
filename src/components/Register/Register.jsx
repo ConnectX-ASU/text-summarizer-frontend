@@ -15,46 +15,30 @@ export default function Register() {
               <h2>Sign Up</h2>
             </div>
             <div className="register-body">
-              <div className="inputBox d-flex justify-content-center">
-                <input
-                  id="userName"
-                  name="userName"
-                  type="text"
-                  className="inputArea"
-                />
-                <span className="span-box">User Name</span>
-              </div>
+              <div class="row">
+                <div class="col-xs-4 col-xs-offset-4">
+                  <div class="floating-label-group">
+                    <input type="text" id="User Name" class="form-controls inputArea" autocomplete="off" autofocus required />
+                    <label class="floating-label">User Name</label>
+                  </div>
 
-              <div className="inputBox d-flex justify-content-center">
-                <input
-                  id="userEmail"
-                  name="email"
-                  type="text"
-                  className="inputArea"
-                />
-                <span className="span-box">Email</span>
-              </div>
+                  <div class="floating-label-group">
+                    <input type="text" id="email" class="form-controls inputArea" autocomplete="off" autofocus required />
+                    <label class="floating-label">Email</label>
+                  </div>
 
-              <div className="inputBox d-flex justify-content-center">
-                <input
-                  id="userPassword"
-                  name="password"
-                  type="password"
-                  className="inputArea"
-                />
-                <span className="span-box text-center">Password</span>
-              </div>
+                  <div class="floating-label-group">
+                    <input type="password" id="password" class="form-controls inputArea" autocomplete="off" required />
+                    <label class="floating-label">Password</label>
+                  </div>
 
-              <div className="inputBox d-flex justify-content-center">
-                <input
-                  id="userRePassword"
-                  name="rePassword"
-                  type="password"
-                  className="inputArea"
-                />
-                <span className="span-box">Repassword</span>
-              </div>
+                  <div class="floating-label-group">
+                    <input type="password" id="password" class="form-controls inputArea" autocomplete="off" required />
+                    <label class="floating-label">RePassword</label>
+                  </div>
 
+                </div>
+              </div>
               <button type="submit" className="form-btn">
                 SIGN UP
               </button>
@@ -72,7 +56,7 @@ export default function Register() {
             </div>
           </div>
         </div>
-      </form>
+      </form >
     </>
   );
 }

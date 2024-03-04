@@ -4,6 +4,7 @@ import Register from "./components/Register/Register";
 import Home from "./components/home/home";
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Userhistory from "./components/UserHistory/Userhistory.jsx";
 function App() {
   let routes = createBrowserRouter([
     {
@@ -12,6 +13,7 @@ function App() {
         { index: "home", element: <Home /> },
         { path: "register", element: <Register /> },
         { path: "login", element: <Login /> },
+        { path: "history", element: <Userhistory /> },
       ],
     },
   ]);

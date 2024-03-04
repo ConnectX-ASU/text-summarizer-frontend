@@ -15,39 +15,30 @@ export default function Login() {
             <div className={`${style.loginheader} text-white`}>
               <h2>Login</h2>
             </div>
-            <div className="login-body">
-              <div className="inputBox d-flex justify-content-center">
-                <input
-                  id="userEmail"
-                  name="email"
-                  type="text"
-                  className="inputArea"
-                />
-                <span className="span-box">Email</span>
-              </div>
+            <div class="row">
+              <div class="col-xs-4 col-xs-offset-4">
+                <div class="floating-label-group">
+                  <input type="email" id="email" class="form-controls inputArea" autocomplete="off" autofocus required />
+                  <label class="floating-label">Email</label>
+                </div>
 
-              <div className="inputBox d-flex justify-content-center">
-                <input
-                  id="userPassword"
-                  name="password"
-                  type="password"
-                  className="inputArea"
-                />
-                <span className="span-box text-center">Password</span>
-              </div>
-
-              <button type="submit" className="form-btn">
-                LOGIN
-              </button>
-              <div className="login-footer d-block m-5">
-                <div className="text-center">
-                  <h4 className="fs-6 text-white">Don't have an account ?</h4>
-                  <h6
-                    className="m-color cursor"
-                    onClick={() => navigation("/Register")}
-                  >
-                    SIGN UP
-                  </h6>
+                <div class="floating-label-group">
+                  <input type="password" id="password" class="form-controls inputArea" autocomplete="off" required />
+                  <label class="floating-label">Password</label>
+                </div>
+                <button type="submit" className="form-btn">
+                  LOGIN
+                </button>
+                <div className="login-footer d-block m-5">
+                  <div className="text-center">
+                    <h4 className="fs-6 text-white">Don't have an account ?</h4>
+                    <h6
+                      className="m-color cursor"
+                      onClick={() => navigation("/Register")}
+                    >
+                      SIGN UP
+                    </h6>
+                  </div>
                 </div>
               </div>
             </div>
