@@ -1,12 +1,12 @@
 import { Link, useNavigate } from "react-router-dom";
 import style from "./Register.module.css";
 
-export default function Register() {
+export default function Register({theme}) {
   const navigation = useNavigate();
   return (
     <>
       <form>
-        <div className="w-100 min-vh-100 d-flex justify-content-center bg-dark">
+        <div className={`w-100 min-vh-100 d-flex justify-content-center bg-dark ${theme ? "dark text-white" : "light text-dark"}`}>
           <div
             id="register-div"
             className={`${style.registerCard} h-75 text-center m-auto `}

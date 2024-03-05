@@ -2,20 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: background-color 250ms ease;
 }
 
-:root {
-    --main-color: #3D80FE;
-    --second-color: #555eab;
-    --summary-box-color: #131416;
-}
-
-.light {
-    --main-color: #555eab;
-    --second-color: #3D80FE;
-    --summary-box-color: #fff;
-}
 
 .header {
     height: 60px;

@@ -1,20 +1,18 @@
-import {useState} from "react";
+// import {useState} from "react";
 import { useNavigate } from "react-router-dom";
 import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpload, faDownload, faCopy, faTrashCan, faMoon, faSun} from '@fortawesome/free-solid-svg-icons';
 
-export default function Home() {
+export default function Home({onThemeChange, theme}) {
   const navigation = useNavigate();
-  const [isDark, setIsDark] = useState(true);
-  const handleThemeChange = () => setIsDark(!isDark)
    
   return (
     <>
       <div className = {`header bg-dark`}>
         <div className="theme">
           <span>
-            <FontAwesomeIcon className="icon" onClick={handleThemeChange} icon={ isDark ?  faSun : faMoon} />            
+            <FontAwesomeIcon className="icon" onClick={onThemeChange} icon={ theme ?  faSun : faMoon} />            
           </span>
         </div>
         <div className="inner-header col-md-10 d-flex justify-content-between mx-auto">
@@ -30,7 +28,7 @@ export default function Home() {
      
       {/* //////////!logo and name */}
 
-      <div className={`home bg-dark w-100 min-vh-100 ${isDark ? "dark text-white" : "light text-dark"}`}>
+      <div className={`home bg-dark w-100 min-vh-100 ${theme ? "dark text-white" : "light text-dark"}`}>
         <div className="summary-box col-md-10">
           <div className="options col-md-12 mt-2">
             <span>summary length</span>
@@ -45,7 +43,7 @@ export default function Home() {
                   name="textarea"
                   rows="13"
                   cols="40"
-                  className="w-100 p-2 form-control borders input"
+                  className={`w-100 p-2 form-control borders input ${theme ? "text-white" : "text-dark"}`}
                   placeholder="Enter your text"
                 ></textarea>
               <div className="bottom-icons d-flex justify-content-between align-items-center col-md-12 mb-3">
