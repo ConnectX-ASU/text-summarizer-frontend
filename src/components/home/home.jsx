@@ -2,6 +2,12 @@
 import { useNavigate } from "react-router-dom";
 import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUpload,
+  faDownload,
+  faCopy,
+  faTrashCan,
+} from "@fortawesome/free-solid-svg-icons";
 import { faUpload, faDownload, faCopy, faTrashCan, faMoon, faSun} from '@fortawesome/free-solid-svg-icons';
 
 export default function Home({onThemeChange, theme}) {
@@ -9,6 +15,15 @@ export default function Home({onThemeChange, theme}) {
    
   return (
     <>
+      <div className="header bg-dark">
+        <div className="cursor inner-header col-md-10 d-flex justify-content-between mx-auto">
+          <span className="title mx-2" onClick={() => navigation("/")}>
+            ConnectX AI Summarizer
+          </span>
+          <div className="header-links d-flex justify-content-between w-25">
+            <span onClick={() => navigation("/history")}>user history</span>
+            <span onClick={() => navigation("/Login")}>login/user name</span>
+          </div>
       <div className = {`header bg-dark`}>
         <div className="theme">
           <span>
@@ -25,7 +40,7 @@ export default function Home({onThemeChange, theme}) {
             </div>
         </div>
       </div>
-     
+
       {/* //////////!logo and name */}
 
       <div className={`home bg-dark w-100 min-vh-100 ${theme ? "dark text-white" : "light text-dark"}`}>
@@ -46,10 +61,10 @@ export default function Home({onThemeChange, theme}) {
                   className={`w-100 p-2 form-control borders input ${theme ? "text-white" : "text-dark"}`}
                   placeholder="Enter your text"
                 ></textarea>
-              <div className="bottom-icons d-flex justify-content-between align-items-center col-md-12 mb-3">
-                <FontAwesomeIcon className="icon" icon={faUpload} />
-                <button className="btn btn-outline-primary">Summarize</button>
-              </div>
+                <div className="bottom-icons d-flex justify-content-between align-items-center col-md-12 mb-3">
+                  <FontAwesomeIcon className="icon" icon={faUpload} />
+                  <button className="btn btn-outline-primary">Summarize</button>
+                </div>
               </div>
             </div>
 
@@ -62,11 +77,11 @@ export default function Home({onThemeChange, theme}) {
                   cols="40"
                   className="w-100 p-2 form-control borders "
                   placeholder="summary will appear here:)"
-                  style={{resize: "none"}}
+                  style={{ resize: "none" }}
                 ></textarea>
                 <div className="bottom-icons">
-                <FontAwesomeIcon className="icon" icon={faDownload} />
-                <FontAwesomeIcon className="icon" icon={faCopy} />
+                  <FontAwesomeIcon className="icon" icon={faDownload} />
+                  <FontAwesomeIcon className="icon" icon={faCopy} />
                 </div>
               </div>
             </div>

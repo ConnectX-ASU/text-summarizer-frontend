@@ -102,6 +102,24 @@ textarea input {
   border: none !important;
 }
 
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--bs-body-color);
+  background-color: var(--bs-body-bg);
+  background-clip: padding-box;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: var(--bs-border-radius);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
+
 .span-box {
   color: #ffffff !important;
 }
@@ -115,6 +133,7 @@ input {
 
 .inputArea:focus {
   outline: none;
+  margin-inline: auto;
   width: 80%;
   /* border: 1px solid #d1cfcf !important; */
   padding: 15px 40px;
@@ -136,7 +155,7 @@ input:focus+.span-box {
   line-height: 30px;
   padding: 0 12px;
   z-index: 1111;
-  transform: translate(-17px, -20px) scale(.88);
+  /* transform: translate(-17px, -20px) scale(.88); */
 }
 
 
@@ -161,4 +180,34 @@ input:focus+.span-box {
 
 .cursor {
   cursor: pointer;
+}
+
+.floating-label-group {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+
+  .floating-label {
+    font-size: 13px;
+    color: #cccccc;
+    position: absolute;
+    pointer-events: none;
+    top: 15px;
+    left: 90px;
+    transition: all 0.1s ease;
+  }
+
+  input:focus~.floating-label,
+  input:not(:focus):valid~.floating-label {
+    top: -15px;
+    bottom: 0px;
+    left: 90px;
+    font-size: 11px;
+    opacity: 1;
+    color: #ffffff;
+  }
+}
+
+.row {
+  margin-top: 50px;
 }
