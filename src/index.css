@@ -10,7 +10,22 @@ body {
 
 :root {
   --main-color: #3D80FE;
-  --second-color: #1f345b;
+  --second-color: #555eab;
+  --summary-box-color: #131416;
+  --textarea-output: #110d1e;
+  --text-area-input: #1b1928;
+  --text-color:#fff;
+  --login-card-color: #1a1b1d;
+}
+
+.light {
+  --main-color: #555eab;
+  --second-color: #3D80FE;
+  --summary-box-color: #fff;
+  --textarea-output: lightgray;
+  --text-area-input: lightgray;
+  --text-color: black;
+  --login-card-color: #fff;
 }
 
 .m-color {
@@ -64,6 +79,30 @@ textarea {
 textarea input {
   color: #ffffff !important;
 }
+textarea.form-control:focus {
+  box-shadow: none;
+  border-color: #3D80FE !important;
+}
+
+
+.output textarea {
+  border-color: #0f3986 !important;
+  background-color: var(--textarea-output) !important;
+}
+
+textarea {
+  border-color: #0f3986 !important;
+  background-color: var(--text-area-input) !important;
+}
+
+::placeholder {
+  color:var(--text-color) !important;
+}
+
+textarea input {
+  color: #ffffff !important;
+}
+
 
 .inputArea {
   background-color: black;
