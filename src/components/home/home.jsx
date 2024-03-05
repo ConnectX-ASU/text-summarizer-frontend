@@ -15,6 +15,7 @@ export default function Home({ onThemeChange, theme }) {
             <FontAwesomeIcon className="icon" onClick={onThemeChange} icon={theme ? faSun : faMoon} />
           </span>
         </div>
+        {/* hello from new */}
         <div className="inner-header col-md-10 d-flex justify-content-between mx-auto">
           <span className="title mx-2">ConnectX AI Summarizer</span>
           <div className="header-links d-flex justify-content-between w-25">
