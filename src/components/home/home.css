@@ -2,20 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: background-color 250ms ease;
 }
 
 :root {
     --main-color: #3D80FE;
-    --second-color: #1f345b;
+    --second-color: #555eab;
+    --summary-box-color: #131416;
+}
+
+.light {
+    --main-color: #555eab;
+    --second-color: #3D80FE;
+    --summary-box-color: #fff;
 }
 
 .header {
-    /* border: 2px solid black; */
     height: 60px;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    /* background-color: rgb(0, 0, 0); */
     color: white !important;
     z-index: 999;
     font-size: 1.3rem;
@@ -30,7 +35,6 @@
 }
 
 .home {
-    /* color: white !important; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,9 +43,9 @@
 
 .summary-box {
     position: relative;
-    background-color: #131416 !important;
+    background-color: var(--summary-box-color);
     margin: auto;
-    border-radius: 20px;
+    border-radius: 10px;
     z-index: 999;
     display: flex;
     flex-direction: column;
@@ -90,23 +94,13 @@
     cursor: pointer;
 }
 
-/* .bottom {
-    position: absolute;
-    bottom: 10px;
-    padding: 0 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 47%;
-    
-} */
 textarea{
     color: white !important;
 }
 .icon {
     padding: 10px;
-    /* color: var(--second-color); */
-    color: #555eab !important;
+    color: var(--second-color);
+    /* color: #555eab !important; */
     font-size: 1.8rem;
     cursor: pointer;
     border-radius: 50%;
@@ -118,7 +112,7 @@ textarea{
 }
 
 .icon:hover {
-    color: #3D80FE !important;
+    color: var(--main-color);
 }
 
 
