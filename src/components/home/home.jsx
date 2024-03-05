@@ -16,29 +16,16 @@ export default function Home({ onThemeChange, theme }) {
             <FontAwesomeIcon className="icon" onClick={onThemeChange} icon={theme ? faSun : faMoon} />
           </span>
         </div>
-        {/* hello from new */}
         <div className="inner-header col-md-10 d-flex justify-content-between mx-auto">
           <span className="title mx-2">ConnectX AI Summarizer</span>
           <div className="header-links d-flex justify-content-between w-25">
-            <span onClick={() => navigation("/history")}>user history</span>
+            <span
+              onClick={() => navigation("/history")}
+            >user history</span>
             <span
               onClick={() => navigation("/Login")}
             >login/user name</span>
           </div>
-      <div className = {`header bg-dark`}>
-        <div className="theme">
-          <span>
-            <FontAwesomeIcon className="icon" onClick={onThemeChange} icon={ theme ?  faSun : faMoon} />            
-          </span>
-        </div>
-        <div className="inner-header col-md-10 d-flex justify-content-between mx-auto">
-            <span className="title mx-2">ConnectX AI Summarizer</span>
-            <div className="header-links d-flex justify-content-between w-25">
-                <span>user history</span>
-                <span
-                onClick={() => navigation("/Login")}
-                >login/user name</span>
-            </div>
         </div>
       </div>
 

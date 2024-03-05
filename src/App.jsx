@@ -16,10 +16,7 @@ function App() {
         { index: "home", element: <Home onThemeChange = {handleThemeChange} theme = {isDark}/> },
         { path: "register", element: <Register theme = {isDark}/> },
         { path: "login", element: <Login theme = {isDark}/> },
-        { path: "history", element: <Userhistory /> },
-        { index: "home", element: <Home onThemeChange = {handleThemeChange} theme = {isDark}/> },
-        { path: "register", element: <Register theme = {isDark}/> },
-        { path: "login", element: <Login theme = {isDark}/> },
+        { path: "history", element: <Userhistory /> }
       ],
     },
   ]);

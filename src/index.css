@@ -9,15 +9,13 @@ body {
   height: auto;
 }
 
-
-} */
 :root {
   --main-color: #3D80FE;
   --second-color: #555eab;
   --summary-box-color: #131416;
   --textarea-output: #110d1e;
   --text-area-input: #1b1928;
-  --text-color:#fff;
+  --text-color: #fff;
   --login-card-color: #1a1b1d;
 }
 
@@ -78,12 +76,13 @@ textarea {
 }
 
 ::placeholder {
-  color:var(--text-color) !important;
+  color: var(--text-color) !important;
 }
 
 textarea input {
   color: #ffffff !important;
 }
+
 textarea.form-control:focus {
   box-shadow: none;
   border-color: #3D80FE !important;
@@ -101,7 +100,7 @@ textarea {
 }
 
 ::placeholder {
-  color:var(--text-color) !important;
+  color: var(--text-color) !important;
 }
 
 textarea input {

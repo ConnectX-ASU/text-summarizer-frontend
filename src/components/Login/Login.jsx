@@ -8,8 +8,8 @@ export default function Login({ theme }) {
     <>
       <form>
 
-        
-      <div className={`w-100 min-vh-100 d-flex justify-content-center bg-dark ${theme ? "dark text-white" : "light text-dark"}`}>
+
+        <div className={`w-100 min-vh-100 d-flex justify-content-center bg-dark ${theme ? "dark text-white" : "light text-dark"}`}>
 
           <div
             id="login-div"
@@ -32,9 +32,10 @@ export default function Login({ theme }) {
                 <button type="submit" className="form-btn">
                   LOGIN
                 </button>
+
                 <div className="login-footer d-block m-5">
                   <div className="text-center">
-                    <h4 className="fs-6 text-white">Don't have an account ?</h4>
+                    <h4 className={`fs-6 ${theme ? "text-white" : "text-dark"}`}>Don't have an account ?</h4>
                     <h6
                       className="m-color cursor"
                       onClick={() => navigation("/Register")}
@@ -42,22 +43,10 @@ export default function Login({ theme }) {
                       SIGN UP
                     </h6>
                   </div>
-              <button type="submit" className="form-btn">
-                LOGIN
-              </button>
-              <div className="login-footer d-block m-5">
-                <div className="text-center">
-                  <h4 className={`fs-6 ${theme ? "text-white" : "text-dark"}`}>Don't have an account ?</h4>
-                  <h6
-                    className="m-color cursor"
-                    onClick={() => navigation("/Register")}
-                  >
-                    SIGN UP
-                  </h6>
                 </div>
               </div>
             </div>
-          </div>
+          </div>  
         </div>
       </form>
     </>

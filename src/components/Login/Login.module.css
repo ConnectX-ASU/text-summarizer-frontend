@@ -22,5 +22,6 @@ section:has(.container) {
   width: 500px;
   background-color: #1a1b1d !important;
 }
-  background-color: var(--login-card-color);
-}
+
+/* background-color: var(--login-card-color);
+} */
