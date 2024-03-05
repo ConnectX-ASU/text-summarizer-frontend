@@ -9,9 +9,7 @@ body {
   height: auto;
 }
 
-/* :root {
-  --main-color: #3D80FE;
-  --second-color: #1f345b;
+
 } */
 :root {
   --main-color: #3D80FE;
@@ -86,6 +84,30 @@ textarea {
 textarea input {
   color: #ffffff !important;
 }
+textarea.form-control:focus {
+  box-shadow: none;
+  border-color: #3D80FE !important;
+}
+
+
+.output textarea {
+  border-color: #0f3986 !important;
+  background-color: var(--textarea-output) !important;
+}
+
+textarea {
+  border-color: #0f3986 !important;
+  background-color: var(--text-area-input) !important;
+}
+
+::placeholder {
+  color:var(--text-color) !important;
+}
+
+textarea input {
+  color: #ffffff !important;
+}
+
 
 .inputArea {
   background-color: black;

@@ -14,12 +14,11 @@
     font-size: 1.3rem;
 }
 
-.header-links span {
+.header-links span{
     cursor: pointer;
     transition: all 0.5s ease;
 }
-
-.header-links span:hover {
+.header-links span:hover{
     color: var(--main-color);
 }
 
@@ -83,21 +82,10 @@
     cursor: pointer;
 }
 
-/* .bottom {
-    position: absolute;
-    bottom: 10px;
-    padding: 0 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 47%;
-    
-} */
 
 textarea{
     color: white !important;
 }
-
 .icon {
     padding: 10px;
     color: var(--second-color);
@@ -127,11 +115,6 @@ textarea{
     transition: none;
 }
 
-.bottom-icons {
+.bottom-icons{
     margin-top: 5px;
-}
-
-
-.cursor {
-    cursor: pointer;
 }

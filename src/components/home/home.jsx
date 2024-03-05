@@ -2,27 +2,27 @@
 import { useNavigate } from "react-router-dom";
 import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faUpload,
-  faDownload,
-  faCopy,
-  faTrashCan,
-} from "@fortawesome/free-solid-svg-icons";
-import { faUpload, faDownload, faCopy, faTrashCan, faMoon, faSun} from '@fortawesome/free-solid-svg-icons';
 
-export default function Home({onThemeChange, theme}) {
+import { faUpload, faDownload, faCopy, faTrashCan, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+
+export default function Home({ onThemeChange, theme }) {
   const navigation = useNavigate();
-   
+
   return (
     <>
-      <div className="header bg-dark">
-        <div className="cursor inner-header col-md-10 d-flex justify-content-between mx-auto">
-          <span className="title mx-2" onClick={() => navigation("/")}>
-            ConnectX AI Summarizer
+      <div className={`header bg-dark`}>
+        <div className="theme">
+          <span>
+            <FontAwesomeIcon className="icon" onClick={onThemeChange} icon={theme ? faSun : faMoon} />
           </span>
+        </div>
+        <div className="inner-header col-md-10 d-flex justify-content-between mx-auto">
+          <span className="title mx-2">ConnectX AI Summarizer</span>
           <div className="header-links d-flex justify-content-between w-25">
             <span onClick={() => navigation("/history")}>user history</span>
-            <span onClick={() => navigation("/Login")}>login/user name</span>
+            <span
+              onClick={() => navigation("/Login")}
+            >login/user name</span>
           </div>
       <div className = {`header bg-dark`}>
         <div className="theme">
