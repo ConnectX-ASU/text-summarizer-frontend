@@ -8,6 +8,7 @@ import * as Yup from "yup";
 import axios from "axios";
 
 export default function Register() {
+export default function Register({theme}) {
   const navigation = useNavigate();
   let [errorMsg, setErrormsg] = useState("");
   let [isLoading, setisLoading] = useState(false);
@@ -63,6 +64,8 @@ export default function Register() {
     <>
       <form onSubmit={formik.handleSubmit}>
         <div className="w-100 min-vh-100 d-flex justify-content-center bg-dark">
+      <form>
+        <div className={`w-100 min-vh-100 d-flex justify-content-center bg-dark ${theme ? "dark text-white" : "light text-dark"}`}>
           <div
             id="register-div"
             className={`${style.registerCard} h-75 text-center m-auto `}

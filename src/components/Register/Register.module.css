@@ -32,7 +32,7 @@ section:has(.container) {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white !important;
+  color: var(--text-color) !important;
 }
 
 .registerCard {
@@ -43,7 +43,7 @@ section:has(.container) {
   display: block;
   box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
   width: 500px;
-  background-color: #1a1b1d !important;
+  background-color: var(--login-card-color) !important;
 }
 
 
