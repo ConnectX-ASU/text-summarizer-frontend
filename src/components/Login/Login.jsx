@@ -7,10 +7,7 @@ export default function Login({ theme }) {
   return (
     <>
       <form>
-
-
         <div className={`w-100 min-vh-100 d-flex justify-content-center bg-dark ${theme ? "dark text-white" : "light text-dark"}`}>
-
           <div
             id="login-div"
             className={`${style.login_card}  h-75 m-auto p-2 pt-4 `}

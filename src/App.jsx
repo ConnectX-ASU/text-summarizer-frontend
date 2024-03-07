@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "./App.css";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Home from "./components/home/home";
 import Userhistory from './components/UserHistory/Userhistory';
+import Profile from './components/profile/profile';
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 function App() {
@@ -16,7 +16,7 @@ function App() {
         { index: "home", element: <Home onThemeChange = {handleThemeChange} theme = {isDark}/> },
         { path: "register", element: <Register theme = {isDark}/> },
         { path: "login", element: <Login theme = {isDark}/> },
-        { path: "history", element: <Userhistory /> }
+        { path: "profile", element: <Profile theme = {isDark}/> }
       ],
     },
   ]);

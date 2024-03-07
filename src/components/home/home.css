@@ -6,9 +6,6 @@
 
 
 .header {
-    height: 60px;
-    display: flex;
-    align-items: center;
     color: white !important;
     z-index: 999;
     font-size: 1.3rem;
