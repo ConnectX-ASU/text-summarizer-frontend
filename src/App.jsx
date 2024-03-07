@@ -2,7 +2,6 @@ import { useState } from "react";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
 import Home from "./components/home/home";
-import Userhistory from './components/UserHistory/Userhistory';
 import Profile from './components/profile/profile';
 
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
