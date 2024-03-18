@@ -1,5 +1,4 @@
 // import {useState} from "react";
-import { useNavigate } from "react-router-dom";
 import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CustomNavbar from "../Header/Header";
@@ -11,7 +10,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home({ onThemeChange, theme }) {
-  const navigation = useNavigate();
 
   return (
     <>

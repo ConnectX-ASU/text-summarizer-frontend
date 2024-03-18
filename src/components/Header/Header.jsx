@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faBars } from "@fortawesome/free-solid-svg-icons";
-import "./Header.module.css";
+import "./Header.css";
 function CustomNavbar({ theme, onThemeChange }) {
   const navigation = useNavigate();
   return (
@@ -70,7 +70,6 @@ function CustomNavbar({ theme, onThemeChange }) {
           </ul>
         </div>
       </div>
-      <div className="amar"></div>
     </nav>
   );
 }

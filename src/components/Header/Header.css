@@ -1,0 +1,14 @@
+.nav-link{
+  cursor: pointer;
+  transition: all 0.5s ease !important;
+  font-size: 1.1rem !important;
+}
+  
+.nav-link:hover{
+  color: var(--main-color) !important;
+}
+
+.navbar-toggler:focus{
+  outline: none;
+  box-shadow: none;
+}

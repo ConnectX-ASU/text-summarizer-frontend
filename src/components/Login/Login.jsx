@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import style from "./Login.module.css";
 
 export default function Login({ theme }) {
@@ -15,18 +15,18 @@ export default function Login({ theme }) {
             <div className={`${style.loginheader} ${theme ? "text-white" : "text-dark"}`}>
               <h2>Login</h2>
             </div>
-            <div class="row">
-              <div class="col-xs-4 col-xs-offset-4">
-                <div class="floating-label-group">
-                  <input type="email" id="email" class="form-controls inputArea" autocomplete="off" autofocus required />
-                  <label class="floating-label">Email</label>
+            <div className="row">
+              <div className="col-xs-4 col-xs-offset-4">
+                <div className="floating-label-group">
+                  <input type="email" id="email" className="form-controls inputArea" autoComplete="off" autoFocus required />
+                  <label className="floating-label">Email</label>
                 </div>
 
-                <div class="floating-label-group">
-                  <input type="password" id="password" class="form-controls inputArea" autocomplete="off" required />
-                  <label class="floating-label">Password</label>
+                <div className="floating-label-group">
+                  <input type="password" id="password" className="form-controls inputArea" autoComplete="off" required />
+                  <label className="floating-label">Password</label>
                 </div>
-                <button type="submit" className="form-btn">
+                <button type="submit" classNameName="form-btn">
                   LOGIN
                 </button>
 
